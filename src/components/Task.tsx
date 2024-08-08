@@ -24,7 +24,6 @@ export default function TaskItem(props: TaskItemProps) {
         name: text,
         completed: task.completed,
       };
-      console.log(updatedTask);
       taskStore.updateTask(updatedTask);
     }
   };
