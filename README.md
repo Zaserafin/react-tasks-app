@@ -1,4 +1,4 @@
-<h1 align="center">VUE Tasks Application</h1>
+<h1 align="center">React Tasks Application</h1>
 <h4 align="center">Un simple gestor de tareas desarrollado con herramientas y lenguajes web</h4>
 
 <p align="center">
