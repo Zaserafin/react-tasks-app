@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './theme';
+
+@layer components {
+  .button {
+    @apply text-xs py-0.5 px-2 rounded-2xl border  border-slate-400 text-slate-400 hover:border-slate-300;
+
+    &.disabled {
+      @apply border-blue-400 text-blue-400;
+    }
+  }
+
+  .badge {
+    @apply text-xs py-0.5 px-2 rounded-2xl border border-slate-400 text-slate-400 hover:border-slate-300;
+
+    &.active {
+      @apply border-blue-400 text-blue-400;
+    }
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  color: var(--text-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--special-color) transparent;
+}
